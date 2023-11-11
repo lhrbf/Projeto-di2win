@@ -1,0 +1,22 @@
+.bannerPrincipal{
+    background-color: #FF3FA4;
+}
+
+.imgRobo{
+    max-width: 50%;
+    max-height: 350px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    align-content: flex-start;
+    align-items: center;
+}
+
+button{
+    color: white;
+    background-color: #FF3FA4;
+    border: none;
+    padding: 10px;
+}
