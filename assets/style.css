@@ -8,10 +8,15 @@
 }
 
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:cursive;
     color: white;
     align-content: flex-start;
     align-items: center;
+}
+
+.rodapé{
+    background-color: #FF3FA4;
+    color: white;
 }
 
 button{
