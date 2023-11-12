@@ -8,7 +8,6 @@
 }
 
 p{
-    font-family:cursive;
     color: white;
     align-content: flex-start;
     align-items: center;
@@ -20,8 +19,10 @@ p{
 }
 
 button{
-    color: white;
     background-color: #FF3FA4;
-    border: none;
-    padding: 10px;
+    color: white;
+    border:white 2px inset;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
