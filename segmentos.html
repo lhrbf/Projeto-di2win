@@ -58,33 +58,54 @@
     });
 </script>
 <script>
-    var ctx = document.getElementsByClassName("bar-chart");
+  var ctx = document.getElementsByClassName("bar-chart");
 
-    const name = ['Banco', 'Imobilária', 'Financeira', 'Construtora'] ;
+  const categorias = ['Banco', 'Imobiliária', 'Financeira', 'Construtora'];
 
-    var chartGraph = new Chart(ctx, {
-        type: 'bar',
-        data:{
-            labels: name,
-  datasets: [{
-    label: 'My first chart',
-    data: [2, 1, 1, 1],
-    backgroundColor: [
-      'rgba(30, 200, 30, 0.6)',
-      'rgba(200, 30, 30, 0.6)',
-      'rgba(54, 162, 235, 0.6)',
-      'rgba(255, 205, 86, 0.6)',
-
-    ],
-    borderColor: [
-      'rgb(30, 200, 30)',
-      'rgb(200, 30, 30)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)',
-    ],
-    borderWidth: 1
-  }]
-}
-        });
+  var graficoBarras = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: categorias,
+          datasets: [{
+              label: 'Quantidade',
+              data: [2, 1, 1, 1],
+              backgroundColor: [
+                  'rgba(30, 200, 30, 0.6)',
+                  'rgba(200, 30, 30, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 205, 86, 0.6)',
+              ],
+              borderColor: [
+                  'rgb(30, 225, 30)',
+                  'rgb(225, 30, 30)',
+                  'rgb(54, 162, 225)',
+                  'rgb(255, 215, 86)',
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          legend: {
+              display: false
+          },
+          plugins: {
+              legend: {
+                  display: false
+              }
+          },
+          scales: {
+              y: {
+                  ticks: {
+                      color: 'black' 
+                  }
+              },
+              x: {
+                  ticks: {
+                      color: 'black' 
+                  }
+              }
+          }
+      }
+  });
 </script>
 </html>
